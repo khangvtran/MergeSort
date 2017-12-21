@@ -29,7 +29,8 @@ void Merge(int* A, int low, int mid, int high)
     int m = mid + 1;
     int index = low;
     int resultSize = high - low + 1;
-    int result[resultSize];
+    
+    int *result = new int[resultSize];
     
     while (l <= mid && m <= high)
     {
@@ -69,7 +70,7 @@ void Merge(int* A, int low, int mid, int high)
     }
     
     //cout << "";
-    
+    delete [] result;
     
     return;
 }
