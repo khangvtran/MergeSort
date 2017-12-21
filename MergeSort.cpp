@@ -28,10 +28,9 @@ void Merge(int* A, int low, int mid, int high)
     int l = low;
     int m = mid + 1;
     int index = low;
-    int resultSize = high - low + 1;
-    
-    int *result = new int[resultSize];
-    
+    //int resultSize = high - low + 1;
+    //int *result = new int[resultSize];
+    int* result = new int;
     while (l <= mid && m <= high)
     {
         if (A[l] < A[m])

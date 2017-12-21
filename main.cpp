@@ -10,14 +10,17 @@
 using namespace std;
 # include "MergeSort.hpp"
 
-const int SIZE = 7;
+const int SIZE = 10;
+
+
 void printArray(int* arr, const int & SIZE);
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     
     // initiate an unsorted array
-    int arr[SIZE] = {38, 27, 43, 3, 9, 82, 10};
+    int arr[SIZE] = {38, 27, 43, 3, 9, 82, 10, 33, 27, 31};
+
    
     // print the unsorted array
     cout << "Unsorted: ";
